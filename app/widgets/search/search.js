@@ -77,11 +77,17 @@ var search = (function(w, d){
         });
 
         list.addEventListener('click', function(evt){
+            evt.stopPropagation();
             if(evt.srcElement.nodeName === 'LI') {
                 vm.getSearchResults(evt.srcElement.innerText);
                 searchBox.value = '';
                 commonService.addClass(recentSearches, 'hidden');
             }
+        });
+
+        //disable recent search popup
+        d.body.addEventListener('click', function(e) {
+            commonService.addClass(recentSearches, 'hidden');
         });
 
         function hideRecentSearches() {
