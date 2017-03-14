@@ -1,0 +1,7 @@
+.search-app .pagination-header {
+    padding: 20px;
+}
+
+.search-app .pagination-header .pagination .values {
+    padding: 0 10px;
+}
