@@ -63,8 +63,14 @@
     border-right:10px solid #222;
 }
 
-.search-app .arrow-left, .search-app .arrow-right {
+.search-app .arrow-left,
+.search-app .arrow-right {
     cursor: pointer;
+}
+
+.search-app .arrow-left.disabled,
+.search-app .arrow-right.disabled {
+    cursor: not-allowed;
 }
 
 .search-app .arrow-left.disabled {
