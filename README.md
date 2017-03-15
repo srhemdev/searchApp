@@ -38,6 +38,8 @@ Components:
            It contains a search box and search button.
            We can search for results by either hitting the enter button or clicking on
            the search button.
+           Additionally it shows recent search results, which I am simulating on the client
+           side for now, but preferred would be to maintain on BE.
            Consists of the css file and the constructor class called paginationHeader.
 
 
@@ -48,6 +50,10 @@ Components:
 
         -- searchApp.css
            Contains styles specific to the search app.
+
+    --- libraries
+        --Modernizer
+          Using 3rd party library to help with cross browser styles compatibility.
 
     --- services
         --searchService
@@ -90,6 +96,9 @@ on Javascript as suggested in the Problem Statement.
 - Can add unit tests and also karma configuration to run unit tests.
 - Add gulp configuraton.
 - Can use SASS framework to simplify stylesheets capitalizing on its abilities.
+- Can cache the queries, if we use Ajax we can request for a cache response header from server
+  so that we avoid making calls to fetch results for same query.
+  This call can be made again based on the Expires Header.
 
 
 
