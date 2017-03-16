@@ -40,7 +40,7 @@ Components:
            the search button.
            Additionally it shows recent search results, which I am simulating on the client
            side for now, but preferred would be to maintain on BE.
-           Consists of the css file and the constructor class called paginationHeader.
+           Consists of the css file and the constructor class called search.
 
 
     --- css
